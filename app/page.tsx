@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import { getContents } from "@/sanity/sanity.utils";
 
 import Header from "@/components/header";
@@ -11,17 +11,18 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Certificate } from "@/types/Certificate";
+import SimpleSlider from "@/components/ui/carousel";
 
 export default async function Home() {
   const contents = await getContents();
-  console.log("aqui", contents);
+  // console.log("aqui", contents);
 
   return (
     <div>
       <Header />
       <main>
         <section className="bg-emerald-800 p-4 text-white">
-          <div className="md:px-20 md:pb-32 md:pt-16">
+          <div className="md:px-20 md:pb-16 md:pt-14">
             <p className=" md:text-5xl font-semibold mb-3">
               Lorem Ipsum is simply
             </p>
@@ -31,7 +32,10 @@ export default async function Home() {
             </p>
           </div>
 
-          <div className="md:px-20">
+          <SimpleSlider/>
+
+
+          <div className="hidden md:px-20 md:grid sm:grid-col-2 md:grid-cols-3 gap-4 w-fit 2xl:grid-cols-4 ">
             {contents.map((content: Certificate) => (
               <Card
                 key={content._id}
