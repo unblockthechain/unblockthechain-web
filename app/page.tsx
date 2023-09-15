@@ -32,10 +32,10 @@ export default async function Home() {
             </p>
           </div>
 
-          <SimpleSlider/>
+          <div className="lg:hidden"><SimpleSlider/></div>
 
 
-          <div className="hidden md:px-20 md:grid sm:grid-col-2 md:grid-cols-3 gap-4 w-fit 2xl:grid-cols-4 ">
+          <div className="hidden lg:px-20 lg:grid lg:grid-cols-3 gap-4 w-fit 2xl:grid-cols-4 ">
             {contents.map((content: Certificate) => (
 
               <Card

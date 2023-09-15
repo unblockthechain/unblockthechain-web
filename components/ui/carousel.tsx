@@ -27,8 +27,24 @@ export default async function SimpleSlider() {
       dots: false,
       infinite: false,
       speed: 500,
-      slidesToShow: 1.75,
-      slidesToScroll: 1
+      slidesToShow: 3.75,
+      slidesToScroll: 1,
+    //   nextArrow: <NextArrow/>,
+    //   prevArrow: <PrevArrow/>,
+      responsive: [
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1.75
+            }
+        },
+        {
+            breakpoint: 720,
+            settings: {
+                slidesToShow: 2.75
+            }
+        }
+      ]
     };
     return (
       <Slider {...settings} className="md:hidden">
