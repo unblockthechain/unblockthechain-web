@@ -78,5 +78,13 @@
 }
 
 .slick-slide>div{
-  margin: 0 4px;
+  margin: 0 12px;
+}
+
+.slick-slide>div:nth-child(1) {
+  margin-left: 0;
+}
+
+.slick-list {
+  margin-right: -12px;
 }

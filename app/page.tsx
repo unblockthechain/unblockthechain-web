@@ -34,15 +34,14 @@ export default async function Home() {
 
           <div className="lg:hidden"><SimpleSlider/></div>
 
-
           <div className="hidden lg:px-20 lg:grid lg:grid-cols-3 gap-4 w-fit 2xl:grid-cols-4 ">
             {contents.map((content: Certificate) => (
 
               <Card
                 key={content._id}
-                className="bg-transparent text-white w-56 h-75 "
+                className="bg-transparent text-white w-56 h-75 flex flex-col justify-between"
               >
-                <CardHeader className="gap-3">
+                <CardHeader className="gap-3 h-40">
                   <CardTitle>{content.name}</CardTitle>
                   <img src={content.image} className="w-12"></img>
                 </CardHeader>
@@ -57,6 +56,7 @@ export default async function Home() {
               </Card>
             ))}
           </div>
+
         </section>
       </main>
     </div>
