@@ -22,8 +22,8 @@ export default async function Home() {
       <Header />
       <main>
         <section className="bg-emerald-800 p-4 text-white">
-          <div className="md:px-20 md:pb-16 md:pt-14">
-            <p className=" md:text-5xl font-semibold mb-3">
+          <div className="pb-16 pt-8 md:px-20 md:pb-16 md:pt-14">
+            <p className=" text-3xl md:text-5xl font-semibold mb-3">
               Lorem Ipsum is simply
             </p>
             <p>
@@ -37,6 +37,7 @@ export default async function Home() {
 
           <div className="hidden md:px-20 md:grid sm:grid-col-2 md:grid-cols-3 gap-4 w-fit 2xl:grid-cols-4 ">
             {contents.map((content: Certificate) => (
+
               <Card
                 key={content._id}
                 className="bg-transparent text-white w-56 h-75 "

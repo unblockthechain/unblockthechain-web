@@ -35,16 +35,16 @@ export default async function SimpleSlider() {
         {contents.map((content: Certificate) => (
               <Card
                 key={content._id}
-                className="bg-transparent text-white "
+                className="bg-transparent text-white min-h-76 flex justify-between"
               >
-                <CardHeader className="gap-3">
+                <CardHeader className="gap-2 p-4 pb-0 h-28">
                   <CardTitle>{content.name}</CardTitle>
-                  <img src={content.image} className="w-12"></img>
+                  <img src={content.image} className="w-8"></img>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>{content.description}</CardDescription>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="p-hidden">
                   <a className="text-green-500" href="">
                     Saiba mais
                   </a>
