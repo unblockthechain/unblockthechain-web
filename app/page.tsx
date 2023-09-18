@@ -21,22 +21,23 @@ export default async function Home() {
     <div>
       <Header />
       <main>
-        <section className="bg-emerald-800 p-4 text-white">
+        <section className="bg-emerald-800 p-4 text-white md:pb-16">
           <div className="pb-16 pt-8 md:px-20 md:pb-16 md:pt-14">
-            <p className=" text-3xl md:text-5xl font-semibold mb-3">
+            <h1 className=" text-3xl md:text-5xl font-semibold mb-3">
               Lorem Ipsum is simply
-            </p>
-            <p>
+            </h1>
+            <h2>
               Lorem Ipsum has been the industry's standard dummy text ever since
               the 1500s
-            </p>
+            </h2>
           </div>
 
-          <div className="lg:hidden"><SimpleSlider/></div>
+          <div className="lg:hidden">
+            <SimpleSlider />
+          </div>
 
           <div className="hidden lg:px-20 lg:grid lg:grid-cols-3 gap-4 w-fit 2xl:grid-cols-4 ">
             {contents.map((content: Certificate) => (
-
               <Card
                 key={content._id}
                 className="bg-transparent text-white w-56 h-75 flex flex-col justify-between"
@@ -56,7 +57,31 @@ export default async function Home() {
               </Card>
             ))}
           </div>
+        </section>
 
+        <section className=" p-4 pt-16 md:pt-16  text-emerald-800 flex flex-row md:p-24">
+          <div className="hidden md:flex md:w-3/6">
+            <img src="/images/ask.svg"></img>
+          </div>
+          <div className="w-full md:w-3/6 flex flex-col justify-center">
+            <h3 className="flex justify-center text-emerald-800 font-semibold text-3xl mb-12">
+              Como Funciona?
+            </h3>
+            <ul className="self-center w-56 md:w-full flex flex-col md:items-center gap-4">
+              <li className="flex gap-4 md:w-96">
+                <div className="font-bold text-2xl">1</div>{" "}
+                <p className="">Escolha o certificado</p>
+              </li>
+              <li className="flex gap-4 md:w-96">
+                <div className="font-bold text-2xl">2</div>
+                <p>Vá para loja e compre</p>
+              </li>
+              <li className="flex gap-4 md:w-96">
+                <div className="font-bold text-2xl">3</div>
+                <p>Agende seu horário via email para aprender a usar</p>
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
     </div>
