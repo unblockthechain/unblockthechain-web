@@ -1,5 +1,5 @@
-'use client'
-import { getContents } from "@/sanity/sanity.utils";
+"use client";
+import { getCertificates, getCommonQuestions } from "@/sanity/sanity.utils";
 
 import Header from "@/components/header";
 import {
@@ -10,11 +10,21 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 import { Certificate } from "@/types/Certificate";
 import SimpleSlider from "@/components/ui/carousel";
+import { Questions } from "@/types/Questions";
+import Footer from "@/components/footer";
 
 export default async function Home() {
-  const contents = await getContents();
+  const certificate = await getCertificates();
+  const questions = await getCommonQuestions();
   // console.log("aqui", contents);
 
   return (
@@ -37,7 +47,7 @@ export default async function Home() {
           </div>
 
           <div className="hidden lg:px-20 lg:grid lg:grid-cols-3 gap-4 w-fit 2xl:grid-cols-4 ">
-            {contents.map((content: Certificate) => (
+            {certificate.map((content: Certificate) => (
               <Card
                 key={content._id}
                 className="bg-transparent text-white w-56 h-75 flex flex-col justify-between"
@@ -83,6 +93,24 @@ export default async function Home() {
             </ul>
           </div>
         </section>
+
+        <section className=" p-4 pt-16 md:pt-16  text-emerald-800 flex flex-col md:p-24 items-center">
+          <h3 className="w-full flex justify-center text-emerald-800 font-semibold text-3xl mb-12">
+            Perguntas frequentes
+          </h3>
+          <div className="md:w-3/6">
+            {questions.map((question: Questions) => (
+              <Accordion type="single" collapsible>
+                <AccordionItem value="item-1" key={question._id}>
+                  <AccordionTrigger>{question.title}</AccordionTrigger>
+                  <AccordionContent>{question.description}</AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            ))}
+          </div>
+        </section>
+
+        <Footer/>
       </main>
     </div>
   );

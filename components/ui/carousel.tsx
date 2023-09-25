@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import { getContents } from "@/sanity/sanity.utils";
+import { getCertificates } from "@/sanity/sanity.utils";
 import { Certificate } from "@/types/Certificate";
 
 
@@ -21,7 +21,7 @@ import {
 
 export default async function SimpleSlider() {
 
-   const contents = await getContents();
+   const certificate = await getCertificates();
 
     const settings = {
       dots: false,
@@ -48,7 +48,7 @@ export default async function SimpleSlider() {
     };
     return (
       <Slider {...settings} className="md:hidden">
-        {contents.map((content: Certificate) => (
+        {certificate.map((content: Certificate) => (
               <Card
                 key={content._id}
                 className="bg-transparent text-white min-h-76 flex justify-between"
