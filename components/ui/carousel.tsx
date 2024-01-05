@@ -58,7 +58,7 @@ export default async function SimpleSlider() {
                   <img src={content.image} className="w-8"></img>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>{content.description}</CardDescription>
+                  <CardDescription>{content.description.slice(0, 80) + "..."}</CardDescription>
                 </CardContent>
                 <CardFooter className="p-hidden">
                   <a className="text-green-500" href="">

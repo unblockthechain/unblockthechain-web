@@ -60,10 +60,15 @@ export default async function Home() {
                       <img src={content.image} className="w-12"></img>
                     </CardHeader>
                     <CardContent>
-                      <CardDescription>{content.description.slice(0, 80) + '...'}</CardDescription>
+                      <CardDescription>
+                        {content.description.slice(0, 80) + "..."}
+                      </CardDescription>
                     </CardContent>
                     <CardFooter>
-                      <a className="text-green-500" href="https://certisecure.mercadoshops.com.br/">
+                      <a
+                        className="text-green-500"
+                        href="https://certisecure.mercadoshops.com.br/"
+                      >
                         Saiba mais
                       </a>
                     </CardFooter>
@@ -85,34 +90,51 @@ export default async function Home() {
             <h3 className="flex justify-center text-emerald-800 font-semibold text-3xl mb-12">
               Como Funciona?
             </h3>
-            <ul className="self-center w-56 md:w-full flex flex-col md:items-center gap-4">
-              <li className="flex gap-4 md:w-96">
-                <div>
-                  <div className="font-bold text-2xl">1</div>{" "}
-                  <p className="">Escolha o certificado</p>
+            <ul className="self-center w-56 md:w-full flex flex-col md:items-center gap-6">
+              <li className="flex flex-col  md:w-96">
+                <div className="flex gap-4 items-center">
+                  <span className="font-bold text-2xl">1</span>
+                  <p className="text-xl">Escolha o certificado</p>
                 </div>
-                <p>Compre ou renove o seu Certificado Digital</p>
-               
+                <p className="text-sm">
+                  Compre ou renove o seu Certificado Digital
+                </p>
               </li>
-              <li className="flex gap-4 md:w-96">
-                <div className="font-bold text-2xl">2</div>
-                <p>Vá para loja e compre</p>
+
+              <li className="flex flex-col md:w-96">
+                <div className="flex gap-4 items-center">
+                  <span className="font-bold text-2xl">2</span>
+                  <p className="text-xl">Pagamento</p>
+                </div>
+                <p className="text-sm">
+                  Compre em até 12x no cartão ou pague em até 15 dias no boleto.
+                </p>
               </li>
-              <li className="flex gap-4 md:w-96">
-                <div className="font-bold text-2xl">3</div>
-                <p>Agende seu horário via email para aprender a usar</p>
+              <li className="flex flex-col md:w-96">
+                <div className="flex gap-4 items-center">
+                  <span className="font-bold text-2xl">3</span>
+                  <p className="text-xl">Validação</p>
+                </div>
+                <p className="text-sm">
+                  Agende a sua validação no melhor horário e local e apresente a
+                  documentação obrigatória.
+                </p>
               </li>
             </ul>
           </div>
         </section>
 
-        <section className=" p-4 pt-16 md:pt-16 bg-white text-emerald-800 flex flex-col md:p-24 items-center">
-          <h3 className="w-full flex justify-center text-emerald-800 font-semibold text-3xl mb-12">
+        <section className=" p-4 pt-16 pb-16 md:pt-16 bg-white text-emerald-800 flex flex-col md:p-24 items-center">
+          <h3 className="w-full flex justify-center text-emerald-800 font-semibold text-3xl mb-12 text-center">
             Perguntas frequentes
           </h3>
           <div className="md:w-3/6">
             {questions.map((question: Questions) => (
-              <Accordion type="single" collapsible className="hover:text-green-500 hover:no-underline">
+              <Accordion
+                type="single"
+                collapsible
+                className="hover:text-green-500 hover:no-underline"
+              >
                 <AccordionItem value="item-1" key={question._id}>
                   <AccordionTrigger>{question.title}</AccordionTrigger>
                   <AccordionContent>{question.description}</AccordionContent>
@@ -123,7 +145,6 @@ export default async function Home() {
         </section>
       </main>
       <Footer />
-
     </div>
   );
 }
