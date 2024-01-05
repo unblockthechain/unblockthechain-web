@@ -32,7 +32,7 @@ export default async function Home() {
     <div className="bg-emerald-800">
       <Header />
       <main>
-        <section className="bg-emerald-800 p-4 text-white md:pb-16 flex flex-row">
+        <section className="bg-emerald-800 p-4 text-white md:pb-16 flex flex-row md:pt-16">
           <div>
             <div className="pb-16 pt-8 md:px-20 md:pb-16 md:pt-0">
               <h1 className=" text-3xl md:text-5xl font-bold mb-3">
@@ -134,10 +134,11 @@ export default async function Home() {
                 type="single"
                 collapsible
                 className="hover:text-green-500 hover:no-underline"
+                key={question._id}
               >
                 <AccordionItem value="item-1" key={question._id}>
-                  <AccordionTrigger>{question.title}</AccordionTrigger>
-                  <AccordionContent>{question.description}</AccordionContent>
+                  <AccordionTrigger key={question._id}>{question.title}</AccordionTrigger>
+                  <AccordionContent key={question._id}>{question.description}</AccordionContent>
                 </AccordionItem>
               </Accordion>
             ))}
