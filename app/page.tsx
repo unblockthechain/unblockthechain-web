@@ -1,7 +1,3 @@
-"use client";
-
-import { getCertificates, getCommonQuestions } from "@/sanity/sanity.utils";
-
 import Header from "@/components/header";
 import {
   Card,
@@ -17,131 +13,191 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-import { Certificate } from "@/types/Certificate";
-import SimpleSlider from "@/components/ui/carousel";
-import { Questions } from "@/types/Questions";
 import Footer from "@/components/footer";
+import SimpleSlider from "@/components/ui/carousel";
+import { SERVICES } from "@/lib/services";
+import { FAQ_ITEMS } from "@/lib/faq";
+import { AUDIT_FORM_HREF, externalLinkProps } from "@/lib/urls";
 
-export default async function Home() {
-  const certificate = await getCertificates();
-  const questions = await getCommonQuestions();
-  // console.log("aqui", contents);
-
+export default function Home() {
   return (
-    <div className="bg-emerald-800">
+    <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="bg-emerald-800 p-4 text-white md:pb-16 flex flex-row md:pt-16">
-          <div>
-            <div className="pb-16 pt-8 md:px-20 md:pb-16 md:pt-0">
-              <h1 className=" text-3xl md:text-5xl font-bold mb-3">
-                Certisecure Serviços Digitais
+        {/* Hero */}
+        <section className="relative overflow-hidden border-b border-border/40 px-4 pb-16 pt-8 md:px-20 md:pb-24 md:pt-16">
+          <div className="mx-auto flex max-w-6xl flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex-1">
+              <h1 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-5xl lg:max-w-xl">
+                Web3 security audits that protect your protocol
               </h1>
-              <h2 className="md:text-xl">
-                Soluções Eficientes e Seguras em Certificação Digital para
-                transações online
-              </h2>
-            </div>
-
-            <div className="lg:hidden">
-              <SimpleSlider />
-            </div>
-
-            <div className="hidden lg:px-20 lg:grid lg:grid-cols-3 gap-4 w-fit 2xl:grid-cols-4 ">
-              {certificate.map((content: Certificate) => (
-                <Card
-                  key={content._id}
-                  className="bg-transparent text-white w-56 h-75 flex flex-col justify-between hover:border-green-500"
+              <p className="mb-8 max-w-lg text-lg text-muted-foreground md:text-xl">
+                Unblock the Chain provides enterprise-grade blockchain security:
+                smart contract audits, RWA tokenization assurance, and Web3
+                security for teams that can’t afford to ship vulnerable code.
+              </p>
+              <div className="hero-cta-row flex flex-wrap gap-4">
+                <a
+                  href={AUDIT_FORM_HREF}
+                  {...externalLinkProps(AUDIT_FORM_HREF)}
+                  className="inline-flex h-11 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground hover:bg-primary/90"
                 >
-                  <a href="https://certisecure.mercadoshops.com.br/">
-                    <CardHeader className="gap-3 h-40">
-                      <CardTitle>{content.name}</CardTitle>
-                      <img src={content.image} className="w-12"></img>
+                  Request Audit
+                </a>
+                <a
+                  href="#services"
+                  className="inline-flex h-11 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
+                >
+                  Our Services
+                </a>
+              </div>
+            </div>
+            <div className="hero-services-mobile lg:hidden w-full">
+              <SimpleSlider items={SERVICES} />
+            </div>
+            <div className="hero-services-desktop hidden lg:grid lg:max-w-2xl lg:grid-cols-1 lg:gap-4 xl:grid-cols-3">
+              {SERVICES.map((service) => (
+                <Card
+                  key={service.id}
+                  className="flex flex-col justify-between border-border/50 bg-card/80 transition-colors hover:border-primary/50"
+                >
+                  <a
+                    href={service.href}
+                    {...externalLinkProps(service.href)}
+                    className="flex h-full flex-col"
+                  >
+                    <CardHeader className="gap-3">
+                      <CardTitle className="text-foreground">
+                        {service.name}
+                      </CardTitle>
                     </CardHeader>
-                    <CardContent>
-                      <CardDescription>
-                        {content.description.slice(0, 80) + "..."}
+                    <CardContent className="flex-1">
+                      <CardDescription className="text-muted-foreground">
+                        {service.description}
                       </CardDescription>
                     </CardContent>
                     <CardFooter>
-                      <a
-                        className="text-green-500"
-                        href="https://certisecure.mercadoshops.com.br/"
-                      >
-                        Saiba mais
-                      </a>
+                      <span className="text-primary hover:underline">
+                        Learn more →
+                      </span>
                     </CardFooter>
                   </a>
                 </Card>
               ))}
             </div>
           </div>
-          <div className="hidden md:w-96 lg:block">
-            <img src="/images/illustrationCertif.svg" />
-          </div>
         </section>
 
-        <section className=" p-4 pt-16 md:pt-16 bg-white text-emerald-800 flex flex-row md:p-24">
-          <div className="hidden md:flex md:w-3/6">
-            <img src="/images/ask.svg"></img>
-          </div>
-          <div className="w-full md:w-3/6 flex flex-col justify-center">
-            <h3 className="flex justify-center text-emerald-800 font-semibold text-3xl mb-12">
-              Como Funciona?
-            </h3>
-            <ul className="self-center w-56 md:w-full flex flex-col md:items-center gap-6">
-              <li className="flex flex-col  md:w-96">
-                <div className="flex gap-4 items-center">
-                  <span className="font-bold text-2xl">1</span>
-                  <p className="text-xl">Escolha o certificado</p>
+        {/* How it works */}
+        <section
+          id="services"
+          className="border-b border-border/40 px-4 py-16 md:px-20 md:py-24"
+        >
+          <div className="mx-auto max-w-6xl">
+            <h2 className="mb-12 text-center text-2xl font-semibold text-foreground md:text-3xl">
+              How we work
+            </h2>
+            <ul className="mx-auto flex max-w-2xl flex-col gap-10 md:gap-12">
+              <li className="flex flex-col gap-2 md:flex-row md:items-start md:gap-6">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/20 text-lg font-bold text-primary">
+                  1
+                </span>
+                <div>
+                  <p className="text-lg font-medium text-foreground">
+                    Scope &amp; engagement
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    We define scope, timeline, and deliverables for your smart
+                    contracts, RWA setup, or Web3 stack.
+                  </p>
                 </div>
-                <p className="text-sm">
-                  Compre ou renove o seu Certificado Digital
-                </p>
               </li>
-
-              <li className="flex flex-col md:w-96">
-                <div className="flex gap-4 items-center">
-                  <span className="font-bold text-2xl">2</span>
-                  <p className="text-xl">Pagamento</p>
+              <li className="flex flex-col gap-2 md:flex-row md:items-start md:gap-6">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/20 text-lg font-bold text-primary">
+                  2
+                </span>
+                <div>
+                  <p className="text-lg font-medium text-foreground">
+                    Security review
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Our team performs a thorough audit and documents
+                    vulnerabilities, risks, and recommendations.
+                  </p>
                 </div>
-                <p className="text-sm">
-                  Compre em até 12x no cartão ou pague em até 15 dias no boleto.
-                </p>
               </li>
-              <li className="flex flex-col md:w-96">
-                <div className="flex gap-4 items-center">
-                  <span className="font-bold text-2xl">3</span>
-                  <p className="text-xl">Validação</p>
+              <li className="flex flex-col gap-2 md:flex-row md:items-start md:gap-6">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/20 text-lg font-bold text-primary">
+                  3
+                </span>
+                <div>
+                  <p className="text-lg font-medium text-foreground">
+                    Report &amp; follow-up
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    You receive a clear report and optional remediation support
+                    so you can ship with confidence.
+                  </p>
                 </div>
-                <p className="text-sm">
-                  Agende a sua validação no melhor horário e local e apresente a
-                  documentação obrigatória.
-                </p>
               </li>
             </ul>
           </div>
         </section>
 
-        <section className=" p-4 pt-16 pb-16 md:pt-16 bg-white text-emerald-800 flex flex-col md:p-24 items-center">
-          <h3 className="w-full flex justify-center text-emerald-800 font-semibold text-3xl mb-12 text-center">
-            Perguntas frequentes
-          </h3>
-          <div className="md:w-3/6">
-            {questions.map((question: Questions) => (
-              <Accordion
-                type="single"
-                collapsible
-                className="hover:text-green-500 hover:no-underline"
-                key={question._id}
-              >
-                <AccordionItem value="item-1" key={question._id}>
-                  <AccordionTrigger key={question._id}>{question.title}</AccordionTrigger>
-                  <AccordionContent key={question._id}>{question.description}</AccordionContent>
+        {/* FAQ */}
+        <section id="faq" className="px-4 py-16 md:px-20 md:py-24">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="mb-12 text-center text-2xl font-semibold text-foreground md:text-3xl">
+              Frequently asked questions
+            </h2>
+            <Accordion type="single" collapsible className="w-full">
+              {FAQ_ITEMS.map((item) => (
+                <AccordionItem
+                  key={item.id}
+                  value={item.id}
+                  className="border-border/50"
+                >
+                  <AccordionTrigger className="text-left hover:no-underline hover:text-primary">
+                    {item.title}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    {item.description}
+                  </AccordionContent>
                 </AccordionItem>
-              </Accordion>
-            ))}
+              ))}
+            </Accordion>
+          </div>
+        </section>
+
+        {/* Contact CTA */}
+        <section
+          id="contact"
+          className="border-t border-border/40 px-4 py-16 md:px-20 md:py-24"
+        >
+          <div className="mx-auto max-w-2xl rounded-xl border border-border bg-card/50 p-8 text-center md:p-12">
+            <h2 className="mb-2 text-2xl font-semibold text-foreground">
+              Ready to secure your protocol?
+            </h2>
+            <p className="mb-6 text-muted-foreground">
+              Tell us about your project in the form below. We’ll get back with
+              scope and timeline.
+            </p>
+            <a
+              href={AUDIT_FORM_HREF}
+              {...externalLinkProps(AUDIT_FORM_HREF)}
+              className="inline-flex h-11 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+            >
+              Request audit
+            </a>
+            <p className="mt-4 text-sm text-muted-foreground">
+              Prefer email?{" "}
+              <a
+                href="mailto:contact@unblockthechain.com"
+                className="text-primary underline underline-offset-4 hover:text-primary/90"
+              >
+                contact@unblockthechain.com
+              </a>
+            </p>
           </div>
         </section>
       </main>

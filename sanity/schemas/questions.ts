@@ -1,12 +1,12 @@
 const questions = {
   name: "perguntas",
   type: "document",
-  title: "Perguntas frequentes",
+  title: "Frequently Asked Questions",
   fields: [
     {
       name: "title",
       type: "string",
-      title: "Título",
+      title: "Title",
     },
     {
       name: "slug",

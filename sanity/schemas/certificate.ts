@@ -1,7 +1,7 @@
 const certificate = {
   name: "certificado",
   type: "document",
-  title: "Certificados",
+  title: "Certificates",
   fields: [
     {
       name: "name",
