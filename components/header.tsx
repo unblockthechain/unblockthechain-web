@@ -13,11 +13,19 @@ export default function Header() {
           Unblock the Chain
         </span>
       </a>
-      <Button asChild size="default" className="shrink-0">
-        <a href={AUDIT_FORM_HREF} {...externalLinkProps(AUDIT_FORM_HREF)}>
-          Request Audit
+      <nav className="flex items-center gap-4">
+        <a
+          href="/research"
+          className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+        >
+          Research
         </a>
-      </Button>
+        <Button asChild size="default" className="shrink-0">
+          <a href={AUDIT_FORM_HREF} {...externalLinkProps(AUDIT_FORM_HREF)}>
+            Request Audit
+          </a>
+        </Button>
+      </nav>
     </header>
   );
 }
