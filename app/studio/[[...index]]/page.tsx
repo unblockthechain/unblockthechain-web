@@ -3,7 +3,13 @@
  * Component and export generateStaticParams (required for output: "export").
  */
 
+import type { Metadata } from "next";
 import Studio from "./Studio";
+
+export const metadata: Metadata = {
+  title: "Studio",
+  robots: { index: false, follow: false },
+};
 
 /** Pre-render /studio for static export */
 export function generateStaticParams() {

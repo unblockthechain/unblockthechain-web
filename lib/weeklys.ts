@@ -12,8 +12,7 @@ export interface WeeklyPost {
 
 function extractContent(raw: string): string {
   // Some files have preamble before the actual report.
-  // The report always starts with "# ⛓️"
-  const marker = "# ⛓️";
+  const marker = "# Weekly Crypto Research";
   const idx = raw.indexOf(marker);
   return idx >= 0 ? raw.slice(idx) : raw;
 }

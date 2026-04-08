@@ -65,10 +65,10 @@ export default function Footer() {
               Contact
             </a>
             <a
-              href="#"
+              href={`mailto:${EMAIL}?subject=Security%20and%20privacy`}
               className="text-sm text-muted-foreground hover:text-foreground"
             >
-              Security &amp; Privacy
+              Security &amp; privacy
             </a>
           </div>
         </div>

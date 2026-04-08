@@ -3,18 +3,26 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+/** Avoid `<10%`, `<650`, etc. being parsed as HTML and breaking the rest of the document. */
+function escapeLtComparisonsInMarkdown(source: string) {
+  return source
+    .replace(/<(?=[0-9])/g, "&lt;")
+    .replace(/<-(?=[0-9])/g, "&lt;-");
+}
+
 export function MarkdownRenderer({ content }: { content: string }) {
+  const safe = escapeLtComparisonsInMarkdown(content);
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
       components={{
         h1: ({ children }) => (
-          <h1 className="mb-4 mt-8 text-3xl font-bold tracking-tight text-foreground">
+          <h1 className="mb-6 mt-0 text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
             {children}
           </h1>
         ),
         h2: ({ children }) => (
-          <h2 className="mb-3 mt-10 text-2xl font-semibold text-foreground border-b border-border pb-2">
+          <h2 className="mb-3 mt-12 scroll-mt-20 text-2xl font-semibold tracking-tight text-foreground border-b border-border pb-2">
             {children}
           </h2>
         ),
@@ -104,7 +112,7 @@ export function MarkdownRenderer({ content }: { content: string }) {
         ),
       }}
     >
-      {content}
+      {safe}
     </ReactMarkdown>
   );
 }

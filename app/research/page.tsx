@@ -1,11 +1,27 @@
+import type { Metadata } from "next";
 import { getAllWeeklys } from "@/lib/weeklys";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/site";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 
-export const metadata = {
-  title: "Research | Unblock the Chain",
-  description:
-    "Weekly institutional-grade crypto research from Unblock the Chain.",
+const title = `Research | ${SITE_NAME}`;
+const description =
+  "Weekly institutional-grade crypto research from Unblock the Chain.";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: { canonical: "/research" },
+  openGraph: {
+    type: "website",
+    url: `${SITE_URL}/research`,
+    title,
+    description,
+    images: [DEFAULT_OG_IMAGE],
+  },
+  twitter: { title, description, images: [DEFAULT_OG_IMAGE] },
 };
 
 export default function ResearchPage() {
@@ -22,27 +38,36 @@ export default function ResearchPage() {
           </p>
 
           <div className="space-y-4">
-            {posts.map((post) => (
-              <a
-                key={post.slug}
-                href={`/research/${post.slug}`}
-                className="block rounded-lg border border-border bg-card p-6 transition-colors hover:border-primary/50 hover:bg-card/80"
-              >
-                <time className="text-sm text-muted-foreground">
-                  {new Date(post.date + "T00:00:00").toLocaleDateString(
-                    "en-US",
-                    {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    }
-                  )}
-                </time>
-                <h2 className="mt-1 text-lg font-semibold text-foreground">
-                  {post.title}
-                </h2>
-              </a>
-            ))}
+            {posts.map((post) => {
+              const formatted = new Date(
+                post.date + "T00:00:00"
+              ).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              });
+              return (
+                <a
+                  key={post.slug}
+                  href={`/research/${post.slug}`}
+                  className="group block"
+                >
+                  <Card className="h-full border-border bg-card transition-colors hover:border-primary/40 hover:bg-card/90">
+                    <CardContent className="p-6">
+                      <Badge
+                        variant="secondary"
+                        className="mb-3 font-normal text-muted-foreground"
+                      >
+                        {formatted}
+                      </Badge>
+                      <h2 className="text-lg font-semibold tracking-tight text-foreground group-hover:text-primary">
+                        {post.title}
+                      </h2>
+                    </CardContent>
+                  </Card>
+                </a>
+              );
+            })}
           </div>
         </div>
       </main>

@@ -1,0 +1,24 @@
+# Unblock the Chain
+
+> Web3 security audits, smart contract assurance, and RWA tokenization reviews for protocols and institutions.
+
+Unblock the Chain delivers enterprise-grade blockchain security: manual and tool-assisted smart contract reviews, architecture and threat modeling for real-world asset (RWA) tokenization, and broader Web3 security engagements.
+
+## Main pages
+
+- [Home](https://unblockthechain.com/): Services overview, process, FAQ, and contact.
+- [Research](https://unblockthechain.com/research): Weekly institutional-grade crypto market research (Markdown reports).
+
+## Contact & intake
+
+- Email: contact@unblockthechain.com
+- Audit request: use the “Request audit” / intake form linked from the homepage (see Home).
+
+## For crawlers
+
+- [Sitemap](https://unblockthechain.com/sitemap.xml)
+- [robots.txt](https://unblockthechain.com/robots.txt)
+
+## Optional
+
+- Content management UI at `/studio` is disallowed in robots.txt and should not be used as a source of truth for public marketing copy.

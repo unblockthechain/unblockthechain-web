@@ -1,4 +1,4 @@
-# ⛓️‍💥 Weekly Crypto Research
+# Weekly Crypto Research
 
 **UBC Research Team** | January 27, 2026
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 TL;DR
+## TL;DR
 
 - **BTC consolidates near $89K** amid subdued sentiment and Fed rate hold at 3.50%-3.75%, with on-chain flows signaling reduced selling pressure despite hash rate declines to 690 EH/s.
 - **On-chain guarded bullish**: Miner transfers down -6%, LTH accumulation via dormant supply +176bps, MVRV Z-Score in "Anxiety" zone supports $90K+ base case.
@@ -15,7 +15,7 @@
 
 ---
 
-## 📋 EXECUTIVE SUMMARY
+## EXECUTIVE SUMMARY
 
 **Key Takeaways:**
 
@@ -25,7 +25,7 @@
 
 ---
 
-## 📊 MARKET SCOREBOARD
+## MARKET SCOREBOARD
 
 | **Metric** | **BTC** | **ETH** | **Notes** |
 | --- | --- | --- | --- |
@@ -39,7 +39,7 @@
 
 ---
 
-## 🌍 MACRO PULSE
+## MACRO PULSE
 
 **Fed Policy:**
 - Current rate: **3.50%-3.75%** (after 75bps cuts late 2025)
@@ -47,35 +47,35 @@
 - Stance guarded amid 4.4% unemployment, PCE inflation 2.9% above 2% target
 
 **Crypto Impact:**
-- ✅ QT normalization ended Dec 2025 supports ample reserves long-term
-- ⚠️ Higher-for-longer tightens liquidity, caps BTC/alt rallies
-- ⚠️ Powell presser (Jan 28 2:30pm ET) may reinforce USD strength
+- QT normalization ended Dec 2025 supports ample reserves long-term
+- Higher-for-longer tightens liquidity, caps BTC/alt rallies
+- Powell presser (Jan 28 2:30pm ET) may reinforce USD strength
 
 **Positioning:** Fade spot rallies above $90K until June cut confirmation; favor carry in ETH LSTs ~2.5% APY
 
 ---
 
-## 🔗 ON-CHAIN INTELLIGENCE
+## ON-CHAIN INTELLIGENCE
 
 **Bitcoin Flows:**
 | **Metric** | **Value** | **Signal** |
 | --- | --- | --- |
-| Exchange Supply | -11% | 🟢 Reduced churn/selling pressure |
-| Whale Transactions ($1M+) | Mixed | 🟡 Distribution cooling, retail accum |
-| LTH Accumulation | +176bps (>5yr supply) | 🟢 Dormant holder growth |
-| MVRV Z-Score | Anxiety zone | 🟡 Stabilized post-deleveraging |
-| Miner Hash Rate | -6% (690 EH/s) | 🔴 Stress from ice storm/AI pivot |
+| Exchange Supply | -11% | Reduced churn/selling pressure |
+| Whale Transactions ($1M+) | Mixed | Distribution cooling, retail accum |
+| LTH Accumulation | +176bps (>5yr supply) | Dormant holder growth |
+| MVRV Z-Score | Anxiety zone | Stabilized post-deleveraging |
+| Miner Hash Rate | -6% (690 EH/s) | Stress from ice storm/AI pivot |
 
 **Ethereum:**
 - Options OI skews protective post-Oct deleveraging
 - LST base yields ~2.5% with TVL stable
 - Cycle signals less predictive vs BTC leadership
 
-**Signal:** 🟡 **Constructive base-building** - lower flows offset network vulnerabilities
+**Signal:** **Constructive base-building** - lower flows offset network vulnerabilities
 
 ---
 
-## 🎯 PREDICTION MARKET ALPHA
+## PREDICTION MARKET ALPHA
 
 **Strategy:** Buy rangebound resolution; BTC $88K-$92K cluster (75% prob per Polymarket/Gemini)
 
@@ -89,7 +89,7 @@
 
 ---
 
-## 💰 DEFI YIELDS & ALPHA
+## DEFI YIELDS & ALPHA
 
 **Base Staking Yields (Cash APY):**
 
@@ -107,18 +107,18 @@
 | Pendle | stETH PT/YT | 4.2% | Varies by maturity |
 | Ethena | sUSDe | 4.78%* | *Base yield ex-SATS |
 
-⚠️ **Important:** "Total APY" includes promotional incentives that may not persist. Base staking yield for ETH LSTs is ~2.5% as of 2026-01-27.
+**Important:** "Total APY" includes promotional incentives that may not persist. Base staking yield for ETH LSTs is ~2.5% as of 2026-01-27.
 
-**⚠️ Risk Notes:**
+**Risk Notes:**
 - Stick to audited, high-TVL protocols (Lido, Aave, Maker)
 - Incentive programs can end abruptly — don't chase unsustainable yields
 - **Data source:** DefiLlama yields, 2026-01-27
 
 ---
 
-## 📈 TRADE IDEAS
+## TRADE IDEAS
 
-### **Trade 1: BTC Long 🟢**
+### **Trade 1: BTC Long**
 
 | **Parameter** | **Value** |
 | --- | --- |
@@ -130,7 +130,7 @@
 
 **Thesis:** Polymarket 41% $88-90K + on-chain flows down -11% support bounce from seller exhaustion; hash rate dip transient vs LTH accum +176bps; trail stops above T1.
 
-### **Trade 2: ETH LST Carry 🟡**
+### **Trade 2: ETH LST Carry**
 
 | **Parameter** | **Value** |
 | --- | --- |
@@ -142,7 +142,7 @@
 
 **Thesis:** Base 2.46% APY + rangebound BTC provides ~10% annualized carry; post-deleveraging options skew protective favors spot hold; Pendle PT enhances to 4.2%.
 
-### **Trade 3: FOMC Hold Yes ✅**
+### **Trade 3: FOMC Hold Yes**
 
 | **Parameter** | **Value** |
 | --- | --- |
@@ -155,40 +155,40 @@
 
 ---
 
-## 💼 PORTFOLIO UPDATE
+## PORTFOLIO UPDATE
 
 **Current Allocation:**
 
 ```
-BTC          ██████████████████████░░░░░░░░░░░░░░░░░░  55%
-ETH          ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  25%
-Stables/DeFi █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  15%
-Pred Markets ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  5%
+BTC ██████████████████████░░░░░░░░░░░░░░░░░░ 55%
+ETH ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 25%
+Stables/DeFi █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 15%
+Pred Markets ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 5%
 ```
 
 **Recent Results:**
 | **Trade** | **Entry** | **Exit** | **P&L** |
 | --- | --- | --- | --- |
-| BTC $90K Put Spread | $88,500 | $89,156 | **+1.8%** ✅ |
+| BTC $90K Put Spread | $88,500 | $89,156 | **+1.8%** |
 | stETH Carry | $3,180 | — | +0.9% unrealized |
 
 **Weekly Performance:** +1.2% vs. market -0.5% benchmark (**+1.7% alpha**)
 
 ---
 
-## ⚠️ RISKS TO WATCH
+## RISKS TO WATCH
 
 | **Risk** | **Trigger** | **Impact** |
 | --- | --- | --- |
-| 🔴 **Hash Rate Collapse** | <650 EH/s sustained | High - Network security vulnerability |
-| 🟠 **Fed Hawkishness** | Powell signals no 2026 cuts | Med - Liquidity drain, BTC sub-$85K |
-| 🟡 **Options Expiry** | Dealer gamma flip $90-95K | Low-Med - Volatility spike |
+| **Hash Rate Collapse** | below 650 EH/s sustained | High - Network security vulnerability |
+| **Fed Hawkishness** | Powell signals no 2026 cuts | Med - Liquidity drain, BTC sub-$85K |
+| **Options Expiry** | Dealer gamma flip $90-95K | Low-Med - Volatility spike |
 
-**Risk Management:** Size positions <2% risk; hedge with $90K puts if BTC >$91K; monitor Glassnode miner flows daily
+**Risk Management:** Size positions under 2% risk; hedge with $90K puts if BTC >$91K; monitor Glassnode miner flows daily
 
 ---
 
-## 📅 WEEK AHEAD
+## WEEK AHEAD
 
 **Key Events:**
 
@@ -206,7 +206,7 @@ Pred Markets ██░░░░░░░░░░░░░░░░░░░░�
 
 ---
 
-## 📅 About This Report
+## About This Report
 
 - **Published:** January 27, 2026 12:00 UTC
 - **Author:** Unblock The Chain Research
@@ -214,7 +214,7 @@ Pred Markets ██░░░░░░░░░░░░░░░░░░░░�
 
 ---
 
-## 📊 Data Sources & Methodology
+## Data Sources & Methodology
 
 | **Data Type** | **Source** | **Timestamp** |
 | --- | --- | --- |
@@ -232,8 +232,8 @@ Pred Markets ██░░░░░░░░░░░░░░░░░░░░�
 
 ---
 
-> ⚠️ **Disclaimer:** This report is for informational purposes only and does not constitute financial advice. Always do your own research (DYOR) before making any investment decisions. Past performance is not indicative of future results.
+> **Disclaimer:** This report is for informational purposes only and does not constitute financial advice. Always do your own research (DYOR) before making any investment decisions. Past performance is not indicative of future results.
 
 ---
 
-*© 2026 Unblock The Chain, Corp.*
+© 2026 Unblock The Chain, Corp.

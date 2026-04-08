@@ -54,7 +54,7 @@ export default function SimpleSlider({ items }: SimpleSliderProps) {
               href={item.href}
               {...externalLinkProps(item.href)}
             >
-              Learn more
+              Request audit — {item.name}
             </a>
           </CardFooter>
         </Card>

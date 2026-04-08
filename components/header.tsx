@@ -7,7 +7,11 @@ import { AUDIT_FORM_HREF, externalLinkProps } from "@/lib/urls";
 export default function Header() {
   return (
     <header className="site-header sticky top-0 z-50 flex justify-between items-center p-4 md:px-20 border-b border-border/40 bg-background/80 backdrop-blur-md">
-      <a href="/" className="flex items-center gap-2">
+      <a
+        href="/"
+        className="flex items-center gap-2"
+        aria-label="Unblock the Chain — Home"
+      >
         <ShieldCheck className="h-8 w-8 text-primary" aria-hidden />
         <span className="text-xl font-semibold text-foreground">
           Unblock the Chain

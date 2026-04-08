@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import Header from "@/components/header";
+import { HomeJsonLd } from "@/components/home-json-ld";
 import {
   Card,
   CardContent,
@@ -18,10 +20,34 @@ import SimpleSlider from "@/components/ui/carousel";
 import { SERVICES } from "@/lib/services";
 import { FAQ_ITEMS } from "@/lib/faq";
 import { AUDIT_FORM_HREF, externalLinkProps } from "@/lib/urls";
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_OG_IMAGE,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/site";
+
+const homeTitle = `${SITE_NAME} | Web3 Security Audits & Smart Contract Assurance`;
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: {
+    url: SITE_URL,
+    title: homeTitle,
+    description: DEFAULT_DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE],
+  },
+  twitter: {
+    title: homeTitle,
+    description: DEFAULT_DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE],
+  },
+};
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
+      <HomeJsonLd />
       <Header />
       <main>
         {/* Hero */}
@@ -52,6 +78,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            <h2 className="sr-only">Our services</h2>
             <div className="hero-services-mobile lg:hidden w-full">
               <SimpleSlider items={SERVICES} />
             </div>
@@ -78,7 +105,7 @@ export default function Home() {
                     </CardContent>
                     <CardFooter>
                       <span className="text-primary hover:underline">
-                        Learn more →
+                        Request audit — {service.name}
                       </span>
                     </CardFooter>
                   </a>

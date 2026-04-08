@@ -1,4 +1,4 @@
-# ⛓️‍💥 Weekly Crypto Research
+# Weekly Crypto Research
 
 **UBC Research Team** | January 16, 2026
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 TL;DR
+## TL;DR
 
 - **Bitcoin consolidates at \$94.8K after rejecting \$96K supply zone; ETH underperforms with weaker institutional flows despite 5.3% weekly gain—watch \$91K support and \$100K resistance for Q1 direction**
 - **Options expiry (\$2.84B notional today) tests breakout conviction; dealer gamma short \$95K–\$104K creates fragile upside mechanics dependent on spot demand persistence**
@@ -15,7 +15,7 @@
 
 ---
 
-## 📋 EXECUTIVE SUMMARY
+## EXECUTIVE SUMMARY
 
 **Key Takeaways:**
 
@@ -27,7 +27,7 @@
 
 ---
 
-## 📊 MARKET SCOREBOARD
+## MARKET SCOREBOARD
 
 | **Metric** | **BTC** | **ETH** | **Notes** |
 | --- | --- | --- | --- |
@@ -41,7 +41,7 @@
 
 ---
 
-## 🌍 MACRO PULSE
+## MACRO PULSE
 
 **Fed Policy:**
 - Current rate: **3.50%–3.75%** (after 75 bps of cuts in late 2025, including 25 bps cut at Dec 2025 FOMC)
@@ -49,15 +49,15 @@
 - **Key insight:** Fed ended QT in December 2025 and is conducting Treasury purchases to maintain ample-reserves regime. This liquidity support benefits risk assets, but hawkish forward guidance ("extent and timing" of cuts) and sticky core PCE (3.0% for 2025, 2.5% projected for 2026) limit aggressive easing expectations.
 
 **Crypto Impact:**
-- ✅ **Ample liquidity:** Fed reserve management supports lower borrowing costs for leveraged positions and risk-on sentiment
-- ⚠️ **No-cut bias:** 95% hold odds at Jan 27–28 FOMC sustains USD strength and pressures crypto prices short-term if macro data disappoints
-- ⚠️ **Inflation stickiness:** Core PCE above 2% target through 2026 could delay rate cuts, capping upside if growth slows
+- **Ample liquidity:** Fed reserve management supports lower borrowing costs for leveraged positions and risk-on sentiment
+- **No-cut bias:** 95% hold odds at Jan 27–28 FOMC sustains USD strength and pressures crypto prices short-term if macro data disappoints
+- **Inflation stickiness:** Core PCE above 2% target through 2026 could delay rate cuts, capping upside if growth slows
 
 **Positioning:** Monitor Jan 14 CPI release (December 2025 data) and upcoming jobs reports for shifts in FedWatch odds. A hotter-than-expected CPI could push no-cut odds higher, creating downside pressure on BTC/ETH. Conversely, soft data could accelerate market pricing of 2026 cuts, supporting risk assets.
 
 ---
 
-## 🔗 ON-CHAIN INTELLIGENCE
+## ON-CHAIN INTELLIGENCE
 
 **Bitcoin Flows:**
 | **Metric** | **Value** | **Signal** |
@@ -73,11 +73,11 @@
 - **Staking dynamics:** ~30% of ETH supply locked in staking; Layer 2 activity sustains fee burn offsetting issuance, supporting scarcity narrative
 - **Technical test:** Must reclaim 200-day moving average (\$3,216) to confirm breakout; currently consolidating below this level
 
-**Signal:** 🟢 **Cautiously Constructive** — Profit-taking collapsed to \$184M/day (from \$1B+ in Q4), ETF inflows resumed (~\$400M Jan 5), and whale distribution cooling create cleaner setup for Q1 expansion. However, overhead supply (\$93K–\$110K) and thin derivatives liquidity (futures volume below 2025 averages) mean upside is fragile and dependent on sustained spot demand. Watch \$91K support and \$98.3K STH cost basis for confirmation of trend reversal.
+**Signal:** **Cautiously Constructive** — Profit-taking collapsed to \$184M/day (from \$1B+ in Q4), ETF inflows resumed (~\$400M Jan 5), and whale distribution cooling create cleaner setup for Q1 expansion. However, overhead supply (\$93K–\$110K) and thin derivatives liquidity (futures volume below 2025 averages) mean upside is fragile and dependent on sustained spot demand. Watch \$91K support and \$98.3K STH cost basis for confirmation of trend reversal.
 
 ---
 
-## 🎯 PREDICTION MARKET ALPHA
+## PREDICTION MARKET ALPHA
 
 **Strategy:** Options expiry (\$2.84B notional today) tests whether Bitcoin's breakout above \$95K holds. Dealer gamma is short \$95K–\$104K, creating mechanical upside reinforcement if spot momentum persists. Ethereum's weaker block trade activity suggests institutional caution; positioning for selective BTC upside with hedged ETH exposure.
 
@@ -91,7 +91,7 @@
 
 ---
 
-## 💰 DEFI YIELDS & ALPHA
+## DEFI YIELDS & ALPHA
 
 **Base Staking Yields (Cash APY):**
 
@@ -109,18 +109,18 @@
 | Pendle | stETH PT/YT | 6–8% | Varies by maturity; YT (yield token) captures staking yield + incentives |
 | Ethena | sUSDe | 4.78% | Base yield from funding rates + staking; excludes temporary SATS rewards |
 
-⚠️ **Important:** "Total APY" includes promotional incentives that may not persist. Base staking yield for ETH LSTs is ~2.5% as of 2026-01-16. EigenLayer and Pendle yields are variable and depend on restaking demand and market conditions. Stick to audited, high-TVL protocols (Lido, Aave, Maker) for stable returns.
+**Important:** "Total APY" includes promotional incentives that may not persist. Base staking yield for ETH LSTs is ~2.5% as of 2026-01-16. EigenLayer and Pendle yields are variable and depend on restaking demand and market conditions. Stick to audited, high-TVL protocols (Lido, Aave, Maker) for stable returns.
 
-**⚠️ Risk Notes:**
+**Risk Notes:**
 - Stick to audited, high-TVL protocols (Lido \$27.8B, Aave, Maker)
 - Incentive programs can end abruptly—don't chase unsustainable yields (e.g., EigenLayer points may have minimal value at TGE)
 - **Data source:** [DefiLlama](https://defillama.com/yields), 2026-01-16
 
 ---
 
-## 📈 TRADE IDEAS
+## TRADE IDEAS
 
-### **Trade 1: BTC Long Breakout 📈**
+### **Trade 1: BTC Long Breakout**
 
 | **Parameter** | **Value** |
 | --- | --- |
@@ -134,10 +134,10 @@
 
 ---
 
-### **Trade 2: ETH Breakout Above 200-DMA 📊**
+### **Trade 2: ETH Breakout Above 200-DMA**
 
 | **Parameter** | **Value** |
-| --- | --- | 
+| --- | --- |
 | Entry | \$3,250 |
 | Target 1 | \$3,400 (resistance; +4.6%) |
 | Target 2 | \$3,600 (cycle recovery; +10.8%) |
@@ -148,7 +148,7 @@
 
 ---
 
-### **Trade 3: BTC Put Spread (Downside Hedge) 🛡️**
+### **Trade 3: BTC Put Spread (Downside Hedge)**
 
 | **Parameter** | **Value** |
 | --- | --- |
@@ -161,38 +161,38 @@
 
 ---
 
-## 💼 PORTFOLIO UPDATE
+## PORTFOLIO UPDATE
 
 **Current Allocation:**
 
 ```
-BTC          ██████████████████████░░░░░░░░░░░░░░░░░░░░  48%
-ETH          ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  18%
-Stables/DeFi ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  18%
-Pred Markets ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  8%
-Cash         ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  8%
+BTC ██████████████████████░░░░░░░░░░░░░░░░░░░░ 48%
+ETH ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 18%
+Stables/DeFi ██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 18%
+Pred Markets ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 8%
+Cash ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 8%
 ```
 
 **Recent Results:**
 | **Trade** | **Entry** | **Exit** | **P&L** |
 | --- | --- | --- | --- |
-| BTC Long (Jan 5–16) | \$87,200 | \$94,776 | **+8.7%** ✅ |
-| ETH Long (Jan 5–16) | \$3,100 | \$3,275 | **+5.6%** ✅ |
+| BTC Long (Jan 5–16) | \$87,200 | \$94,776 | **+8.7%** |
+| ETH Long (Jan 5–16) | \$3,100 | \$3,275 | **+5.6%** |
 | Put Spread \$91K/\$85K | \$2,000 credit | Open | **+1.2% (unrealized)** |
 
 **Weekly Performance:** +3.8% realized (BTC/ETH long exits) + 1.2% unrealized (put spread) = **+5.0% total** vs. +2.1% BTC benchmark (**+2.9% alpha**)
 
 ---
 
-## ⚠️ RISKS TO WATCH
+## RISKS TO WATCH
 
 | **Risk** | **Trigger** | **Impact** |
 | --- | --- | --- |
-| 🔴 **Overhead Supply Rejection** | BTC fails to hold \$98.3K STH cost basis | Retest of \$91K support; consolidation extends into Feb; altseason stalls |
-| 🟠 **Macro Disappointment** | Jan 14 CPI hotter than expected (>3.2% core) | FedWatch no-cut odds rise to 98%+; USD strength pressures BTC/ETH; risk-off sentiment |
-| 🟡 **Thin Liquidity Reversal** | Futures volume collapses further; spot CVD turns negative | Mechanical unwind of short gamma positions; \$95K–\$104K zone becomes fragile; flash crash risk |
+| **Overhead Supply Rejection** | BTC fails to hold \$98.3K STH cost basis | Retest of \$91K support; consolidation extends into Feb; altseason stalls |
+| **Macro Disappointment** | Jan 14 CPI hotter than expected (>3.2% core) | FedWatch no-cut odds rise to 98%+; USD strength pressures BTC/ETH; risk-off sentiment |
+| **Thin Liquidity Reversal** | Futures volume collapses further; spot CVD turns negative | Mechanical unwind of short gamma positions; \$95K–\$104K zone becomes fragile; flash crash risk |
 
-**Risk Management:** 
+**Risk Management:**
 - **Position sizing:** Keep BTC long to 2–3% of portfolio; use 1% stops on individual trades
 - **Macro hedging:** If Jan 14 CPI surprises hot, reduce BTC exposure by 20–30% and increase stables allocation
 - **Liquidity monitoring:** Watch Glassnode's futures volume and spot CVD daily; if volume drops >30% from current levels, reduce leverage and tighten stops to \$93K
@@ -200,7 +200,7 @@ Cash         ████░░░░░░░░░░░░░░░░░░�
 
 ---
 
-## 📅 WEEK AHEAD
+## WEEK AHEAD
 
 **Key Events:**
 
@@ -220,7 +220,7 @@ Cash         ████░░░░░░░░░░░░░░░░░░�
 
 ---
 
-## 📅 About This Report
+## About This Report
 
 - **Published:** January 16, 2026, 17:05 UTC
 - **Author:** Unblock The Chain Research
@@ -228,7 +228,7 @@ Cash         ████░░░░░░░░░░░░░░░░░░�
 
 ---
 
-## 📊 Data Sources & Methodology
+## Data Sources & Methodology
 
 | **Data Type** | **Source** | **Timestamp** |
 | --- | --- | --- |
@@ -252,8 +252,8 @@ Cash         ████░░░░░░░░░░░░░░░░░░�
 
 ---
 
-> ⚠️ **Disclaimer:** This report is for informational purposes only and does not constitute financial advice. Always do your own research (DYOR) before making any investment decisions. Past performance is not indicative of future results. Crypto markets are highly volatile and subject to regulatory, technical, and macro risks. Position sizing and risk management are critical. Consult a financial advisor before deploying capital.
+> **Disclaimer:** This report is for informational purposes only and does not constitute financial advice. Always do your own research (DYOR) before making any investment decisions. Past performance is not indicative of future results. Crypto markets are highly volatile and subject to regulatory, technical, and macro risks. Position sizing and risk management are critical. Consult a financial advisor before deploying capital.
 
 ---
 
-*© 2026 Unblock The Chain, Corp.*
+© 2026 Unblock The Chain, Corp.
