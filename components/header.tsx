@@ -1,6 +1,5 @@
 "use client";
 
-import { ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AUDIT_FORM_HREF, externalLinkProps } from "@/lib/urls";
 
@@ -12,7 +11,15 @@ export default function Header() {
         className="flex items-center gap-2"
         aria-label="Unblock the Chain — Home"
       >
-        <ShieldCheck className="h-8 w-8 text-primary" aria-hidden />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/ubc-logo.png"
+          alt=""
+          width={36}
+          height={36}
+          className="h-9 w-9"
+          aria-hidden
+        />
         <span className="text-xl font-semibold text-foreground">
           Unblock the Chain
         </span>

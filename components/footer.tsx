@@ -1,6 +1,6 @@
 "use client";
 
-import { ShieldCheck, Linkedin, Mail, Github } from "lucide-react";
+import { Linkedin, Mail, Github } from "lucide-react";
 
 const ADDRESS = "1007 N Orange St. 4th Floor, 2360, Wilmington, DE 19801, New Castle, US";
 const EMAIL = "contact@unblockthechain.com";
@@ -13,7 +13,15 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 md:px-20">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="h-8 w-8 shrink-0 text-primary" aria-hidden />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/ubc-logo.png"
+              alt=""
+              width={36}
+              height={36}
+              className="h-9 w-9 shrink-0"
+              aria-hidden
+            />
             <span className="text-lg font-semibold text-foreground">
               Unblock the Chain
             </span>

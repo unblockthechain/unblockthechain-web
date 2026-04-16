@@ -7,7 +7,16 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          purple: "#7C3AED",
+          indigo: "#4F46E5",
+          cyan: "#22D3EE",
+          navy: "#0B1026",
+        },
+      },
+    },
   },
   plugins: [],
 }
