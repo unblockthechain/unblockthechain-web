@@ -2694,7 +2694,7 @@
   resolved "https://registry.npmjs.org/@sentry/core/-/core-8.55.1.tgz"
   integrity sha512-0ea+yDOgaijR3ba2al1QZxY0bZ9MBZq2a0G+2A0uCBpBkiXnpLFGVAo9UAlEikN1C4M8ROZYiuFU7yZCqacgLQ==
 
-"@sentry/react@^8.55.0":
+"@sentry/react@^8.55.0", "@sentry/react@^8.55.1":
   version "8.55.1"
   resolved "https://registry.npmjs.org/@sentry/react/-/react-8.55.1.tgz"
   integrity sha512-vrqEI1EVRMaeUluHSt84//WFuMecqAfwS+t2SojhvXtsSP6BbaCHd0jt7til5MBzI9kWAQjIxsUUr3pbFAviVg==
